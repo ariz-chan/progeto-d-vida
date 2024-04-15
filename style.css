@@ -40,9 +40,22 @@ body {
   color: var(--branco);
   display: flex;
   justify-content: center;
-  padding: 1en;
+  padding: 1em;
   font-size: 18px;
   align-items: center;
   width: 100%;
-  
+  border-bottom: 4px solid var(--botao-ativo);
+  border-left: 4px solid var(--botao-ativo);
+  border-right: 4px solid var(--botao-ativo);
+  border-top: 4px solid var(--botao-ativo) ;
+}
+
+.botao{
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .botao{
+    display: flex;
+  }
+
 }
