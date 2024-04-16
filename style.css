@@ -50,12 +50,33 @@ body {
   border-top: 4px solid var(--botao-ativo) ;
 }
 
+.botao:first-child{
+  border-radius: 40px 40px 0 0;
+}
+
 .botao{
   display: block;
 }
+
+.ativo{
+  background-color: var(--botao-ativo);
+  border-bottom: 4px solid var(--verde);
+}
+
+.abas-textos{
+  background-color: var(--texto-fundo) ;
+}
+
 @media screen and (min-width: 768px) {
-  .botao{
+  .botoes {
     display: flex;
   }
 
+ .botao:first-child{
+  border-radius: 40px 0 0 0;
+ }
+
+ .botao:last-child{
+  border-radius: 0 40px 0 0;
+ }
 }
